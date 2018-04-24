@@ -1,123 +1,83 @@
+<!--
+	Author: W3layouts
+	Author URL: http://w3layouts.com
+	License: Creative Commons Attribution 3.0 Unported
+	License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+
+
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Asociación Integral</title>
-            <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
-        <style type="text/css">body{margin:0;font-family:Lato;}ul,li{list-style-type:none;margin:0;padding:0;}.calendar{padding:30px;}.calendar .day{background:#D8703F;border-bottom:2px solid #bdc3c7;float:left;margin:3px;position:relative;height:120px;width:120px;}.day.marked{background:#FFBB26;border-color:#9F9F9F;}.day .day-number{color:#FFCB1F;left:5px;position:absolute;top:5px;}.day.marked .day-number{color:white;}.day .events{color:white;margin:29px 7px 7px;height:78px;overflow-x:hidden;overflow-y:hidden;}.day .events h5{margin:0 0 5px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;width:100%;}.day .events strong,.day .events span{display:block;font-size:11px;}.day .events ul{}.day .events li{}</style>
-    
-        <!-- for-mobile-apps -->
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-        <meta name="keywords" content="Best Store Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
-              Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
-        <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
-            function hideURLbar(){ window.scrollTo(0,1); } </script>
-        <!-- //for-mobile-apps -->
-        <link href="public/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
-        <link href="public/css/style.css" rel="stylesheet" type="text/css" media="all" />
-        <!-- js -->
-        <script src="public/js/jquery.min.js"></script>
-        <!-- //js -->
-        <!-- cart -->
-        <script src="public/js/simpleCart.min.js"></script>
-        <!-- cart -->
-        <!-- for bootstrap working -->
-        <script type="text/javascript" src="public/js/bootstrap-3.1.1.min.js"></script>
-        <!-- //for bootstrap working -->
-        <link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
-        <link href='//fonts.googleapis.com/css?family=Lato:400,100,100italic,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
-        <!-- timer -->
-        <link rel="stylesheet" href="public/css/jquery.countdown.css" />
-        <!-- //timer -->
-        <!-- animation-effect -->
-        <link href="public/css/animate.min.css" rel="stylesheet"> 
-        <script src="public/js/wow.min.js"></script>
-        <script>
-            new WOW().init();
-        </script>
 
-        <script>
-            function addCart(valor1) {
-              
-                var parametros = {
-                    "item": valor1
-                };
+<head>
+	<title>Digital Biz a Corporate Category Bootstrap responsive WebTemplate | Home :: w3layouts</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
+	<meta name="keywords" content="Digital Biz a Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
 
-                $.ajax(
-                        {
-                            data: parametros,
-                            url: '?controlador=Carrito&accion=agregarCarrito',
-                            type: 'POST',
-                            beforeSend: function () {
-                                $("#resultado").html("¡Procesando...espere por favor!");
-                            },
-                            success: function (response) {
-                                $("#resultado").html(response);
-                            }
+	<script type="application/x-javascript">
+		addEventListener("load", function () {
+			setTimeout(hideURLbar, 0);
+		}, false);
 
-                        }
-                );
-            }//realizarProceso
-        </script>
-    </head>
+		function hideURLbar() {
+			window.scrollTo(0, 1);
+		}
+	</script>
+	<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+	<link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" property="" />
+	<link href="css/style.css" rel='stylesheet' type='text/css' />
+	<link href="css/simpleLightbox.css" rel='stylesheet' type='text/css' />
+	<link href="css/fontawesome-all.css" rel="stylesheet">
+	<link href="//fonts.googleapis.com/css?family=Poppins:100i,200,200i,300,400,400i,500,500i,600,600i,700,700i,800" rel="stylesheet">
+</head>
 
-    <body>
-        <!-- header -->
-        <div class="header">
-            <div class="container">
-                <div class="header-grid">
-                    <div class="header-grid-left animated wow slideInLeft" data-wow-delay=".5s">
-                        <ul>
-                            <?php
-                            if (session_status() != 2) {
-                                session_start();
-                            }
-                            if (isset($_SESSION['u_usuario'])) {
-                           
-                                $id = $_SESSION['u_usuario'];
-                                    ?>
-                                    <li><i class="glyphicon glyphicon-log-in" aria-hidden="true"></i><a href="?controlador=Usuario&accion=cerrarSesion">Cerrar Sesión</a></li>
-                                    <?php
-                                
-                            } else {
-                                ?>
-                                <li><i class="glyphicon glyphicon-log-in" aria-hidden="true"></i><a href="?controlador=Default&accion=login">Iniciar Sesión</a></li>
-                                <?php
-                            }
-                            ?>
+<body>
+	<header>
+		<div class="header_top" id="home">
+			<nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+				<a class="navbar-brand" href="index.html">
+					<i class="fab fa-digital-ocean"></i> Digital Biz</a>
+				<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+						aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav mx-auto tp-nav text-center">
+						<li class="nav-item active">
+							<a class="nav-link" href="index.html">Home
+								<span class="sr-only">(current)</span>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="about.html">About</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="blog.html">Blog</a>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+							    aria-expanded="false">
+								Dropdown
+							</a>
+							<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+								<a class="dropdown-item" href="project.html">Projects</a>
+								<div class="dropdown-divider"></div>
+								<a class="dropdown-item" href="error.html">Error Page</a>
+							</div>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="contact.html">Contact</a>
+						</li>
+					</ul>
+					<form action="#" method="post" class="form-inline my-2 my-lg-0 search">
+						<input class="form-control mr-sm-2" type="search" placeholder="Search here..." name="Search" required="">
+						<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+					</form>
 
-                        </ul>
-                    </div>
-
-                    <div class="clearfix"> </div>
-                </div>
-                <div class="logo-nav">
-                    <div class="logo-nav-left animated wow zoomIn" data-wow-delay=".5s">
-                        <h1><a href="?controlador=Default&accion=index">Asociación Integral<span>Sistema de gestión</span></a></h1>
-                    </div>
-                    <div class="logo-nav-left1">
-                        <nav class="navbar navbar-default">
-                            <!-- Brand and toggle get grouped for better mobile display -->
-                            <div class="navbar-header nav_2">
-                                <button type="button" class="navbar-toggle collapsed navbar-toggle1" data-toggle="collapse" data-target="#bs-megadropdown-tabs">
-                                    <span class="sr-only">Toggle navigation</span>
-                                    <span class="icon-bar"></span>
-                                    <span class="icon-bar"></span>
-                                    <span class="icon-bar"></span>
-                                </button>
-                            </div> 
-                            <div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
-                                <ul class="nav navbar-nav">
-                                    	
-                                    <!-- Mega Menu -->
-                                </ul>
-                            </div>
-                        </nav>
-                    </div>
-
-
-                    <div class="clearfix"> </div>
-                </div>
-            </div>
-        </div>
-        <!-- //header --> 
+				</div>
+			</nav>
+		</div>
+	</header>
+	<!--//header-->
