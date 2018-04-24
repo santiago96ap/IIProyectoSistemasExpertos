@@ -7,7 +7,7 @@ class ActividadController {
     public function __construct() {
         $this->view = new View();
     }
-
+    
     public function registrarAlquilerLocal() {
         require 'model/ActividadModel.php';
         $model = new ActividadModel();
