@@ -71,10 +71,10 @@
 	</script>
 	<!-- //stats -->
 	<!-- /js files -->
-	<link href='css/aos.css' rel='stylesheet prefetch' type="text/css" media="all" />
-	<link href='css/aos-animation.css' rel='stylesheet prefetch' type="text/css" media="all" />
-	<script src='js/aos.js'></script>
-	<script src="js/aosindex.js"></script>
+	<link href='public/css/aos.css' rel='stylesheet prefetch' type="text/css" media="all" />
+	<link href='public/css/aos-animation.css' rel='stylesheet prefetch' type="text/css" media="all" />
+	<script src='public/js/aos.js'></script>
+	<script src="public/js/aosindex.js"></script>
 	<!-- //js files -->
 	<!-- start-smoth-scrolling -->
 	<script type="text/javascript" src="public/js/move-top.js"></script>
