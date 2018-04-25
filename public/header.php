@@ -21,6 +21,8 @@
 	<link href="public/css/style.css" rel='stylesheet' type='text/css' />
 	<link href="public/css/simpleLightbox.css" rel='stylesheet' type='text/css' />
 	<link href="public/css/fontawesome-all.css" rel="stylesheet">
+        <link href="public/css/contact.css" rel='stylesheet' type='text/css' />
+        <link href="public/css/team.css" rel='stylesheet' type='text/css' />
 	<link href="//fonts.googleapis.com/css?family=Poppins:100i,200,200i,300,400,400i,500,500i,600,600i,700,700i,800" rel="stylesheet">
 </head>
 
@@ -28,7 +30,7 @@
 	<header>
 		<div class="header_top" id="home">
 			<nav class="navbar navbar-toggleable-md navbar-light bg-faded">
-				<a class="navbar-brand" href="index.html">
+				<a class="navbar-brand" href="?controlador=Default&accion=index">
 					<i class="fab fa-digital-ocean"></i> Tico Traveller</a>
 				<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
 						aria-expanded="false" aria-label="Toggle navigation">
@@ -37,25 +39,29 @@
 				<div class="collapse navbar-collapse" id="navbarSupportedContent">
 					<ul class="navbar-nav mx-auto tp-nav text-center">
 						<li class="nav-item active">
-							<a class="nav-link" href="index.html">Inicio
+							<a class="nav-link" href="?controlador=Default&accion=index">Inicio
 								<span class="sr-only">(current)</span>
 							</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="about.html">Recomendación</a>
+							<a class="nav-link" href="?controlador=Default&accion=recomendacion">Recomendación</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="blog.html">Contáctenos
+							<a class="nav-link" href="?controlador=Default&accion=contactenos">Contáctenos
 </a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="contact.html">¿Dónde encontrarnos?</a>
+							<a class="nav-link" href="?controlador=Default&accion=dondeEncontrar">¿Dónde encontrarnos?</a>
 						</li>
                                                 <li class="nav-item">
-							<a class="nav-link" href="contact.html">Sitios de interés</a>
+							<a class="nav-link" href="?controlador=Default&accion=sitioInteres">Sitios de interés</a>
 						</li>
                                                 <li class="nav-item">
-							<a class="nav-link" href="contact.html">Sobre nosotros</a>
+							<a class="nav-link" href="?controlador=Default&accion=sobreNosotros">Sobre nosotros</a>
+						</li>
+                                                
+                                                <li class="nav-item">
+							<a class="nav-link" href="?controlador=Default&accion=login">login</a>
 						</li>
 					</ul>
 				</div>
