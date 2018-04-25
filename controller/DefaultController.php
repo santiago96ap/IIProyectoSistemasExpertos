@@ -25,5 +25,8 @@ class DefaultController {
     public function sobreNosotros(){
         $this->view->show("SobreNosotrosView.php");
     }
+    public function login(){
+        $this->view->show("LoginView.php");
+    }
     
 }

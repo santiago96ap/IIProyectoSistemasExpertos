@@ -1,13 +1,13 @@
 <?php
 include_once 'public/header.php';
-?>
+?>	
 <div class="banner-inner">
 </div>
 <ol class="breadcrumb">
     <li class="breadcrumb-item">
         <a href="index.html">Inicio</a>
     </li>
-    <li class="breadcrumb-item active">Sitios de interés</li>
+    <li class="breadcrumb-item active">Iniciar Sesión</li>
 </ol>
 <!--/model-->
 <!-- Modal -->
@@ -32,18 +32,17 @@ include_once 'public/header.php';
     </div>
 </div>
 <!--//model-->
+
 <section class="services">
     <div class="container">
 
         <div class="contact_grid_right">
-            <h6>Busca sitios que te interese...</h6>
+            <h6>Iniciar Sesión</h6>
             <form action="#" method="post">
                 <div class="contact_left_grid">
-                    <input type="text" placeholder="buscar..." onfocus="this.value = '';" onblur="if (this.value == '') {
-                        this.value = 'buscar...';
-                    }" required=""><br><br>
-                    
-                    <input type="submit" value="Buscar">
+                    <input type="email" name="Email" placeholder="Correo electrónico" required="">
+                    <input type="text" name="pass" placeholder="contraseña" required=""><br><br>
+                    <input type="submit" value="Entrar">
                     <input type="reset" value="Limpiar">
                     <div class="clearfix"> </div>
                 </div>
@@ -51,6 +50,8 @@ include_once 'public/header.php';
         </div>
     </div>
 </section>
+
 <?php
 include_once 'public/footer.php';
 ?>	
+
