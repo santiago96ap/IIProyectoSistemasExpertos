@@ -40,7 +40,7 @@ include_once 'public/header.php';
 
             <div class="col-md-4 proj_gallery_grid" data-aos="zoom-in">
                 <div class="section_1_gallery_grid">
-                    <a title="Rural" href="public/images/p5As.jpg">
+                    <a title="Asfalto" href="public/images/p5As.jpg">
                         <div class="section_1_gallery_grid1">
                             <img src="public/images/p5As.jpg" alt=" " class="img-responsive" />
                             <div class="proj_gallery_grid1_pos">
@@ -58,7 +58,7 @@ include_once 'public/header.php';
             </div>
             <div class="col-md-4 proj_gallery_grid" data-aos="zoom-in">
                 <div class="section_1_gallery_grid" data-aos="zoom-in">
-                    <a title="Urbano" href="public/images/p5T.jpg">
+                    <a title="Lastre" href="public/images/p5T.jpg">
                         <div class="section_1_gallery_grid1">
                             <img src="public/images/p5T.jpg" alt=" " class="img-responsive" />
                             <div class="proj_gallery_grid1_pos">
@@ -75,7 +75,7 @@ include_once 'public/header.php';
             <label for="sel1">De las ilustraciones anteriores. ¿Cúal prefiere?</label>
             <select class="form-control" id="sel1">
                 <option>Asfalto</option>
-                <option>Laste</option>
+                <option>Lastre</option>
             </select>
         </div>
 
