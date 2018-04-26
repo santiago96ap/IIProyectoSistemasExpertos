@@ -29,4 +29,21 @@ class DefaultController {
         $this->view->show("LoginView.php");
     }
     
+     public function pregunta1(){
+        $this->view->show("Pregunta1View.php");
+    }
+     public function pregunta2(){
+        $this->view->show("Pregunta2View.php");
+    }
+     public function pregunta3(){
+        $this->view->show("Pregunta3View.php");
+    }
+     public function pregunta4(){
+        $this->view->show("Pregunta4View.php");
+    }
+     public function pregunta5(){
+        $this->view->show("Pregunta5View.php");
+    }
+  
+    
 }
