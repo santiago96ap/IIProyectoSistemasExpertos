@@ -35,6 +35,7 @@ include_once 'public/header.php';
 <!--//model-->
 <section class="services">
     <div class="container">
+        <div id="Pregunta1">
         <h3 class="tittle_w3ls">Lugar de Preferencia</h3>
         <div class="row inner-sec-w3layouts-agileinfo">
 
@@ -50,12 +51,13 @@ include_once 'public/header.php';
                         </div>
                     </a>
                 </div>
-
             </div>
+            
             <div class="col-md-4 proj_gallery_grid" data-aos="zoom-in">
                 <div class="section_1_gallery_grid" data-aos="zoom-in">
                 </div>
             </div>
+            
             <div class="col-md-4 proj_gallery_grid" data-aos="zoom-in">
                 <div class="section_1_gallery_grid" data-aos="zoom-in">
                     <a title="Urbano" href="public/images/p1Urbano.png">
@@ -69,6 +71,7 @@ include_once 'public/header.php';
                     </a>
                 </div>
             </div>
+            
         </div>
 
         <div class="form-group">
@@ -78,16 +81,18 @@ include_once 'public/header.php';
                 <option>Urbano</option>
             </select>
         </div>
+        
+        </div>
 
         <ul class="pagination">
+            <li class="page-item"><a class="page-link" onclick="getUpdateEmployee(<?php echo 1; ?>);" id="1">1**</a></li>
             <li class="page-item"><a class="page-link" href="?controlador=Default&accion=pregunta1">1</a></li>
             <li class="page-item"><a class="page-link" href="?controlador=Default&accion=pregunta2">2</a></li>
             <li class="page-item"><a class="page-link" href="?controlador=Default&accion=pregunta3">3</a></li>            
             <li class="page-item"><a class="page-link" href="?controlador=Default&accion=pregunta4">4</a></li>
             <li class="page-item"><a class="page-link" href="?controlador=Default&accion=pregunta5">5</a></li>
-
-
         </ul>
+        
     </div>
 </section>
 
