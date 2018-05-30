@@ -49,7 +49,7 @@
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="?controlador=Default&accion=pregunta1">Recomendación</a>
+                                <a class="nav-link" href="?controlador=Default&accion=preguntas">Recomendación</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="?controlador=Default&accion=contactenos">Contáctenos

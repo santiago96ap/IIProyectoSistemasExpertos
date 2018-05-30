@@ -9,41 +9,43 @@ class DefaultController {
     
     public function index(){
         $this->view->show("IndexView.php");
-    }
+    }//index
     
     public function contactenos(){
         $this->view->show("ContactView.php");
-    }
+    }//contactenos
     
     public function dondeEncontrar(){
         $this->view->show("DondeEncontrarView.php");
-    }
+    }//dondeEncontrar
     public function sitioInteres(){
         $this->view->show("SitioInteresView.php");
-    }
+    }//sitioInteres
     
     public function sobreNosotros(){
         $this->view->show("SobreNosotrosView.php");
-    }
+    }//sobreNosotros
     public function login(){
         $this->view->show("LoginView.php");
-    }
+    }//login
     
-     public function pregunta1(){
-        $this->view->show("Pregunta1View.php");
-    }
-     public function pregunta2(){
-        $this->view->show("Pregunta2View.php");
-    }
-     public function pregunta3(){
-        $this->view->show("Pregunta3View.php");
-    }
-     public function pregunta4(){
-        $this->view->show("Pregunta4View.php");
-    }
-     public function pregunta5(){
-        $this->view->show("Pregunta5View.php");
-    }
-  
+     public function preguntas(){
+        $this->view->show("PreguntasView.php");
+    }//preguntas
     
-}
+    public function registrarSitio(){
+        $this->view->show("RegistrarSitioView.php");
+    }//registrarSitio
+    
+    public function actModSitio(){
+        $this->view->show("ActModSitioView.php");
+    }//actModSitio
+    
+     public function indexADM(){
+        $this->view->show("IndexADMView.php");
+    }//actModSitio
+    
+    public function resultadoRecomendacion(){
+        $this->view->show("ResultadoRecomendacionView.php");
+    }//actModSitio
+}//class

@@ -44,22 +44,22 @@ include_once 'public/header.php';
 		<div class="row inner_stat_wthree_agileits">
 			<div class="col-md-3 stats_left counter_grid">
 				<i class="far fa-building"></i>
-				<p class="counter">145</p>
-				<h4>Branches</h4>
+				<p class="counter">+50</p>
+				<h4>Sitios turísticos</h4>
 			</div>
 			<div class="col-md-3 stats_left counter_grid1">
 				<i class="fas fa-users"></i>
-				<p class="counter">165</p>
-				<h4>Trainers</h4>
+				<p class="counter">+100</p>
+				<h4>Visitas</h4>
 			</div>
 			<div class="col-md-3 stats_left counter_grid2">
 				<i class="far fa-edit"></i>
-				<p class="counter">563</p>
-				<h4>Pojects</h4>
+				<p class="counter">+100</p>
+				<h4>Comentarios</h4>
 			</div>
 			<div class="col-md-3 stats_left counter_grid3">
 				<i class="far fa-smile"></i>
-				<p class="counter">1045</p>
+				<p class="counter">+100</p>
 				<h4>Happy Clients</h4>
 			</div>
 

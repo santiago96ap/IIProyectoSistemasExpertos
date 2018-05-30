@@ -82,7 +82,7 @@ include_once 'public/header.php';
                 <div class="contact_left_grid">
                     <input type="text" name="Name" placeholder="Nombre" required="">
                     <input type="email" name="Email" placeholder="Correo electrónico" required="">
-                    <input type="text" name="Subject" placeholder="Asunti" required="">
+                    <input type="text" name="Subject" placeholder="Asunto" required="">
                     <textarea name="Message" onfocus="this.value = '';" onblur="if (this.value == '') {
                                 this.value = 'Mensaje...';
                             }" required="">Mensaje...</textarea>

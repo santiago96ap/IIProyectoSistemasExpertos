@@ -42,7 +42,7 @@ include_once 'public/header.php';
                 <div class="contact_left_grid">
                     <input type="email" name="Email" placeholder="Correo electrónico" required="">
                     <input type="text" name="pass" placeholder="contraseña" required=""><br><br>
-                    <input type="submit" value="Entrar">
+                    <input type="submit" value="Entrar" onclick="redireccionar();">
                     <input type="reset" value="Limpiar">
                     <div class="clearfix"> </div>
                 </div>
@@ -54,4 +54,10 @@ include_once 'public/header.php';
 <?php
 include_once 'public/footer.php';
 ?>	
+
+<script>
+    function redireccionar(){
+        window.location.replace("?controlador=Default&accion=indexADM");
+    }//redireccionar
+</script>
 
