@@ -47,5 +47,5 @@ class DefaultController {
     
     public function resultadoRecomendacion(){
         $this->view->show("ResultadoRecomendacionView.php");
-    }//actModSitio
+    }//resultadoRecomendacion
 }//class
