@@ -275,14 +275,18 @@ include_once 'public/header.php';
 </section>
 
 <div class="container">
-    <ul class="pagination">
-        <li class="page-item"><a class="page-link" onclick="cambiarOpcion('1');">1</a></li>
-        <li class="page-item"><a class="page-link" onclick="cambiarOpcion('2');">2</a></li>
-        <li class="page-item"><a class="page-link" onclick="cambiarOpcion('3');">3</a></li>            
-        <li class="page-item"><a class="page-link" onclick="cambiarOpcion('4');">4</a></li>
-        <li class="page-item"><a class="page-link" onclick="cambiarOpcion('5');">5</a></li>
-    </ul>
-</div>
+
+        <ul class="pagination">
+            <li class="page-item"><a class="page-link" onclick="cambiarOpcion('1');">1</a></li>
+            <li class="page-item"><a class="page-link" onclick="cambiarOpcion('2');">2</a></li>
+            <li class="page-item"><a class="page-link" onclick="cambiarOpcion('3');">3</a></li>            
+            <li class="page-item"><a class="page-link" onclick="cambiarOpcion('4');">4</a></li>
+            <li class="page-item"><a class="page-link" onclick="cambiarOpcion('5');">5</a></li>
+        </ul>
+
+
+</div> 
+
 
 <?php
 include_once 'public/footer.php';
