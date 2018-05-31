@@ -34,18 +34,18 @@ include_once 'public/header.php';
 <!--//model-->
 <section class="services">
     <div class="container">
- 
-    
-  <h2>Opciones para administrar los sitios turísticos</h2>   <br>
- <div class="list-group">
-  <a href="?controlador=Default&accion=registrarSitio" class="list-group-item list-group-item-action list-group-item-success">Registrar sitios turísticos</a>
-  <a href="?controlador=Default&accion=actModSitio" class="list-group-item list-group-item-action list-group-item-warning">Actualizar o eliminar sitios turísticos</a>
-  <a href="?controlador=Default&accion=listarSitio" class="list-group-item list-group-item-action list-group-item-info">Listar sitios turísticos</a>
-</div>
-   <br>
-</div>
 
-    
+
+        <h2>Opciones para administrar los sitios turísticos</h2>   <br>
+        <div class="list-group">
+            <a href="?controlador=Default&accion=registrarSitio" class="list-group-item list-group-item-action list-group-item-success">Registrar sitios turísticos</a>
+            <a href="?controlador=Default&accion=actModSitio" class="list-group-item list-group-item-action list-group-item-warning">Actualizar o eliminar sitios turísticos</a>
+            <a href="?controlador=Default&accion=listarSitio" class="list-group-item list-group-item-action list-group-item-info">Listar sitios turísticos</a>
+        </div>
+        <br>
+    </div>
+
+
 </section>
 
 <?php

@@ -48,4 +48,8 @@ class DefaultController {
     public function resultadoRecomendacion(){
         $this->view->show("ResultadoRecomendacionView.php");
     }//resultadoRecomendacion
+    
+     public function listarSitio(){
+        $this->view->show("ListarSitioView.php");
+    }//actModSitio
 }//class
