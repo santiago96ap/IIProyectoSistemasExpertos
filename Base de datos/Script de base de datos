@@ -1,0 +1,74 @@
+/*********************************************************************TABLAS*****************************************************/
+create table tb_destinations(
+	id int auto_increment primary key,
+    name varchar(200) not null,
+    address varchar(500)not null,
+    description varchar(800), 
+    x varchar(50),
+    y varchar(50),
+    image varchar(500)
+);
+
+
+create table tb_value_destionations(
+	id int auto_increment primary key,
+    price char not null default 'z',
+    preference_place char not null default 'z',
+    destination_type char not null default 'z',
+    travel_time char not null default 'z',
+    road_type char not null default 'z'
+);
+
+create table tb_user(
+	id int auto_increment primary key,
+    user_name varchar(50) not null,
+    password varchar(50) not null
+);
+
+/***********************************************************PROCEDIMIENTOS ALMACENADOS*************************************************/
+DELIMITER $$
+CREATE PROCEDURE sp_get_all_destinations()
+BEGIN
+  SELECT name, address, description, x, y, image, price, preference_place, destination_type, travel_time, road_type
+			FROM tb_value_destionations, tb_destinations where tb_value_destionations.id = tb_destinations.id;
+END $$
+DELIMITER ;
+
+/*********************************************INSERTS INICIALES EN LA BASE DE DATOS***********************************************/
+
+/*INSERCION DE LOS DATOS GENERALES DE LOS SITIOS TURISTICOS*/
+insert into tb_destinations values(0,'Monumento nacional Guayabo','Santa Teresita Turrialba Cartago','El Monumento Nacional Guayabo es un area protegida de Costa Rica, conocida principalmente porque en ella se encuentra uno de los sitios arqueologicos prehispanicos mas antiguos e importantes del pais.','9.971.152','-83.690.749','public/img/1.jpg');
+insert into tb_destinations values(2,'Hacienda Tayutic','Sitio de Mata, Turrialba, Cartago','En el Hotel Hacienda Tayutic, un pequeño y lujoso hotel en Costa Rica, la historia, la naturaleza y el arte forman parte esencial de la experiencia.' ,'9.881.494','-83.627.633','public/img/2.jpg');
+insert into tb_destinations values(3,'Paque Nacional Volcan Turrialba','Turrialba, Cartago','Desde varios puntos de la cima y en un dia despejado, se puede tener una vista panoramica de las llanuras del Caribe, los macizos de los parques nacionales Braulio Carrillo y el Volcan Poas, el valle de Turrialba, y hasta la cima del cerro Chirripo.','10.017.519','-83.764.965','public/img/5.jpeg');
+insert into tb_destinations values(4,'Paradero Turistico San Buenaventura','Turrialba, Cartago','Ubicado junto a la represa hidroelectrica La Angostura, el Paradero Turístico San Buenaventura se encuentra alejado del ruido y rodeado de naturaleza, se convierte en un lugar ameno para visitar en este canton de Cartago.','9.873.350','-83.645.082','public/img/4.jpg');
+insert into tb_destinations values(5,'Jardin Botanico CATIE','Turrialba, Cartago','Un lugar especial para el descanso, rodeado del canto de las aves, el susurro del gigantesco arbol de Guanacaste y el imponente arbol de ceiba, donde ademas encontrara desde diminutas parasitas, orquideas y bromelias, hasta robustas cepas de bambu.','9.896.788','-83.657.440','public/img/3.jpg');
+insert into tb_destinations values(6,'Rancho El Sapito','Coliblanco de Alavarado, Cartago','El Restaurante es un amplio y con una atmosfera muy agradable, ideal para disfrutar con familiares y amigos.','9.944.200','-83.775.514','public/img/6.jpg');
+insert into tb_destinations values(7,'Centro Turstico Don Ismael','La Suiza, Turrialba, Cartago','Aqui encontrara lo que necesita para el disfrute personal o familiar, contamos con bar y restaurante, pesca deportiva de tilapias, cancha sintetica para futbol cinco, una piscina moderna y preciosa para grandes y chicos, comodas cabinas, todo esto rodeado de un clima simplemente sabroso.','9.858.720','-83.612.436','public/img/7.jpg');
+insert into tb_destinations values(8,'Casa Turire','Atirro, Turrialba, Cartago','Este hermoso lugar esta envuelto por el Lago Angostura con la presencia imponente de las montañas de Turrialba que forman un panorama fuera de serie.','9.862.575','-83.645.109','public/img/8.jpg');
+insert into tb_destinations values(9,'Hotel Villa Florencia','Susanita, Turrialba, Cartago','Hotel Villa Florencia le ofrece el lugar ideal para descansar en uno de los lugares mas pintorescos del Valle de Turrialba. El hotel esta rodeado de plantaciones de caña de azucar y hermosa vegetacion.','9.873.942','-83.659.198','public/img/9.jpg');
+insert into tb_destinations values(10,'Restaurante Mirador Sitios Angostura','Sitio de Mata, Turrialba, Cartago','Desde alli hay una excelente vista de la represa Angostura. Mientras usted come uno que otro colibri se acerca a comer tambien.','9.889.716','-83.630.128','public/img/10.jpg');
+insert into tb_destinations values(11,'Turrialtico Lodge','Pavones, Turrialba, Cartago','Turrialtico Lodge esta construido con hermosa madera rustica. El balcon del hotel ofrece las mejores vistas panoramicas del valle de Turrialba, el volcan Turrialba y la cordillera de Talamanca. El hotel esta rodeado de hermosos jardines tropicales que albergan una gran variedad de aves.','9.895.085','-83.637.209','public/img/11.jpg');
+insert into tb_destinations values(12,'Rancho Naturalista','Tuis, Turrialba, Cartago','El principal hotel de observacion de aves en Costa Rica, Rancho Naturalista es uno de los mejores lodges de observacion de aves en America Central. Varias especies de colibries, asi como muchas otras aves, se pueden ver desde el amplio balcon donde tambien se tiene una gran vista del volcan humeante Turrialba.','9.833.345','-83.563.900','public/img/12.jpg');
+insert into tb_destinations values(13,'Piojos Pool','La Suiza, Turrialba, Cartago','Paradero Turistico','9.853.222','-83.611.430','public/img/13.jpg');
+insert into tb_destinations values(14,'Adrianos Restaurant','Canada', 'Turrialba, Cartago,Restaurante','9.860.241','-83.622.591','public/img/14.jpg');
+insert into tb_destinations values(15,'Complejo Deportivo el Varon','Turrialba, Cartago','Un lugar completamente distinto a cualquier otro complejo, pues cuenta con una vista panoramica de las montañas, el volcan y el pueblo turrialbeño.','9.934.150','-83.693.036','public/img/15.jpg');
+insert into tb_destinations values(16,'Rio Pejibaye' ,'Pejibaye, Jimenez, Cartago','Apto para la practica de rafting, posee rapidos que personas de cualquier edad pueden disfrutar plenamente.','9.793.242','-83.690.331','public/img/16.jpeg');
+insert into tb_destinations values(17,'Parapente Turrialba','Santa Cruz, Turrialba, Cartago','En Santa Cruz de Turrialba encontramos una zona de vuelo privilegiada. Con una buenisima superficie para el despegue y un maravilloso valle con fincas sembradas y lugares apropiados para el aterrizaje ademas claro, de la excelente vista.','9.960.460','-83.749.607','public/img/17.jpg');
+insert into tb_destinations values(18,'Finca Vialig','Pacayitas, Turrialba, Cartago','El Centro Operacional de Finca ViaLig se encuentra en la comunidad de Pacayitas, es una hermosa comunidad, rodeada de montañas y donde se valora el amor por la tierra, lugar de gente amable y con la esperanza de ser cada dia mejor.','9.882.631','-83.582.302','public/img/18.jpg');
+insert into tb_destinations values(19,'Aquiares Waterfall','Aquiares, Turrialba, Cartago','Belleza pura. Todas las grandes cosas en una. Desde las increibles vistas de las exuberantes laderas de las montañas, hasta las hermosas cascadas, las piscinas naturales de los rios que brillan, las caminatas por la selva tropical.','9.941.796','-83.720.544','public/img/19.jpg');
+insert into tb_destinations values(20,'Siloe Lodge','La Suiza, Turrialba, Cartago','Un lugar lleno de Paz y tranquilidad,muy seguro rodeado de 360 vista de montañas y areas verdes,remanso de paz,con camaras de seguridad,y areas protegidas. Habitaciones limpias y frescas muy aseadas y confortables.','9.868.452','-83.633.771','public/img/20.jpg');
+insert into tb_destinations values(21,'Hotel Maribu Caribe','Puerto Limon, Limon','El HOTEL MARIBU CARIBE es un hotel de primera clase, ubicado en una exuberante zona tropical de Costa Rica y en un punto estrategico que desde cualquier angulo, se puede apreciar los maravillosos y relajantes paisajes del Caribe.','10.013.473','-83.049.977','public/img/21.jpg');
+insert into tb_destinations values(22,'Hotel Playa Bonita','Playa Bonita, Limon','El Hotel esta estrategicamente ubicado, donde usted puede visitar lugares con gran valor historico como el Parque Central, el Muelle y la Primera Iglesia Baptista de Limon. Tambien, puede observar el inicio de los impresionantes Canales de Tortuguero, famosos por el anidado de Tortugas y su diversidad de fauna como aves, monos y cocodrilos.','10.009.726','-83.062.047','public/img/22.jpg');
+insert into tb_destinations values(23,'Hotel Oasys del Caribe','Puerto Limon, Limon','Nuestro hotel esta ubicado a pocos minutos del centro de la ciudad de Limon y cerca de la playa, nuestras cabinas cuentan con cama doble, abanicos o aire acondicionado, television y agradable vista a los jardines del hotel, cuenta con Piscinas para niños y adultos, parqueo, restaurante, servicio de Internet.','10.009.298','-83.048.853','public/img/23.jpg');
+insert into tb_destinations values(24,'Hotel Wagelia','Turrialba, Cartago','Hotel','9.903.657','-83.670.802',null);
+insert into tb_destinations values(25,'Restaurante La Flor','Turrialba, Cartago','Restaurante','9.903.657','-83.670.802',null);
+insert into tb_destinations values(26,'Atreus','Turrialba, Cartago','Mariposario','9.903.657','-83.670.802',null);
+insert into tb_destinations values(27,'Rancho San Rafael','Turrialba, Cartago','Paradero Turistico','9.903.657','-83.670.802',null);
+insert into tb_destinations values(28,'Rancho el Sueño','Turrialba, Cartago','Paradero Turistico','9.903.657','-83.670.802',null);
+insert into tb_destinations values(29,'Rancho la pequeña Comarca','Turrialba, Cartago','Paradero Turistico','9.903.657','-83.670.802',null);
+insert into tb_destinations values(30,'Rancho Monteverde','Turrialba, Cartago','Restaurante','9.903.657','-83.670.802',null);
+insert into tb_destinations values(31,'Rancho el Veroliz','Turrialba, Cartago','Paradero Turistico','9.903.657','-83.670.802',null);
+insert into tb_destinations values(32,'El manantial','Turrialba, Cartago','Restaurante','9.903.657','-83.670.802',null);
+insert into tb_destinations values(33,'Hotel la Montaña','Turrialba, Cartago','Hotel / Restaurante','9.903.657','-83.670.802',null);
+insert into tb_destinations values(34,'Hotel Patito','Turrialba, Cartago','Hotel','9.903.657','-83.670.802',null);
+insert into tb_destinations values(35,'La Pastora','Turrialba, Cartago','Paradero Turistico','9.903.657','-83.670.802',null);
