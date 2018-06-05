@@ -72,3 +72,41 @@ insert into tb_destinations values(32,'El manantial','Turrialba, Cartago','Resta
 insert into tb_destinations values(33,'Hotel la Montaña','Turrialba, Cartago','Hotel / Restaurante','9.903.657','-83.670.802',null);
 insert into tb_destinations values(34,'Hotel Patito','Turrialba, Cartago','Hotel','9.903.657','-83.670.802',null);
 insert into tb_destinations values(35,'La Pastora','Turrialba, Cartago','Paradero Turistico','9.903.657','-83.670.802',null);
+
+
+insert into tb_value_destinations values(1, 'e','r','b','a','v', 1);
+insert into tb_value_destinations values(2, 'c','r','b','a','p', 2);
+insert into tb_value_destinations values(3, 'e','r','b','a','p', 3);
+insert into tb_value_destinations values(4, 'e','u','b','a','v', 4);
+insert into tb_value_destinations values(5, 'e','u','b','a','v', 5);
+insert into tb_value_destinations values(6, 'c','r','b','b','v', 6);
+insert into tb_value_destinations values(7, 'e','r','b','a','p', 7);
+insert into tb_value_destinations values(8, 'c','r','b','b','p', 8);
+insert into tb_value_destinations values(9, 'c','r','b','a','p', 9);
+insert into tb_value_destinations values(10, 'e','r','b','a','p', 10);
+insert into tb_value_destinations values(11,'c','r','b','a','v', 11);
+insert into tb_value_destinations values(12, 'c','r','b','b','p', 12);
+insert into tb_value_destinations values(13, 'e','r','b','a','v', 13);
+insert into tb_value_destinations values(14, 'c','u','b','a','v', 14);
+insert into tb_value_destinations values(15, 'i','u','b','a','v', 15);
+insert into tb_value_destinations values(16, 'e','r','b','b','p', 16); 
+insert into tb_value_destinations values(17, 'c','r','b','b','v', 17);
+insert into tb_value_destinations values(18, 'i','r','b','b','p', 18);
+insert into tb_value_destinations values(19, 'e','r','b','b','p', 19);
+insert into tb_value_destinations values(20, 'c','r','b','a','v', 20);
+insert into tb_value_destinations values(21, 'c','u','y','c','v', 21);
+insert into tb_value_destinations values(22, 'c','u','y','c','v', 22);
+insert into tb_value_destinations values(23, 'c','u','y','c','v', 23);
+/*Ficticios*/
+insert into tb_value_destinations values(24, 'c','u','b','a','v', 24);
+insert into tb_value_destinations values(25, 'i','u','b','b','v', 25);
+insert into tb_value_destinations values(26, 'e','r','b','c','p', 26);
+insert into tb_value_destinations values(27, 'i','r','b','a','p', 27);
+insert into tb_value_destinations values(28, 'e','u','b','b','v', 28);
+insert into tb_value_destinations values(29, 'c','r','b','c','v', 29);
+insert into tb_value_destinations values(30, 'e','u','b','c','v', 30);
+insert into tb_value_destinations values(31, 'i','u','b','a','p', 31);
+insert into tb_value_destinations values(32, 'i','u','b','b','v', 32);
+insert into tb_value_destinations values(33, 'c','r','b','a','p', 33);
+insert into tb_value_destinations values(34, 'e','u','b','a','p', 34);
+insert into tb_value_destinations values(35, 'c','r','b','b','v', 35);
