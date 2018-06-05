@@ -13,6 +13,13 @@
         	$result = $query->fetchAll();
         	return $result;
   	  	}//getAllSites
+
+        function getSingleSite($id) {
+            $query = $this->db->prepare("call sp_get_single_destination('$id')");
+            $query->execute();
+            $result = $query->fetchAll();
+            return $result;
+        }//getAllSites
 	}//class
 ?>
 
