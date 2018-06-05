@@ -8,16 +8,16 @@ create table tb_destinations(
     y varchar(50),
     image varchar(500)
 );
-
-
-create table tb_value_destionations(
+create table tb_value_destinations(
 	id int auto_increment primary key,
     price char not null default 'z',
     preference_place char not null default 'z',
     destination_type char not null default 'z',
     travel_time char not null default 'z',
-    road_type char not null default 'z'
-);
+    road_type char not null default 'z',
+    id_destination int not null,
+    constraint foreign key (id_destination) references tb_destinations(id)
+)ENGINE=INNODB;
 
 create table tb_user(
 	id int auto_increment primary key,
@@ -30,7 +30,7 @@ DELIMITER $$
 CREATE PROCEDURE sp_get_all_destinations()
 BEGIN
   SELECT name, address, description, x, y, image, price, preference_place, destination_type, travel_time, road_type
-			FROM tb_value_destionations, tb_destinations where tb_value_destionations.id = tb_destinations.id;
+			FROM tb_value_destinations, tb_destinations where tb_value_destinations.id = tb_destinations.id;
 END $$
 DELIMITER ;
 
@@ -72,6 +72,7 @@ insert into tb_destinations values(32,'El manantial','Turrialba, Cartago','Resta
 insert into tb_destinations values(33,'Hotel la Montaña','Turrialba, Cartago','Hotel / Restaurante','9.903.657','-83.670.802',null);
 insert into tb_destinations values(34,'Hotel Patito','Turrialba, Cartago','Hotel','9.903.657','-83.670.802',null);
 insert into tb_destinations values(35,'La Pastora','Turrialba, Cartago','Paradero Turistico','9.903.657','-83.670.802',null);
+	update tb_destinations set image = 'public/img/24.png' where id>23;
 
 
 insert into tb_value_destinations values(1, 'e','r','b','a','v', 1);
