@@ -36,8 +36,7 @@ class SiteController {
 
         $model = new SiteModel();
         $result = $model->get();
-      
-        //var_dump($result);
+    
         echo json_encode($result);
     }//getAllSites
 
