@@ -50,7 +50,7 @@ class SiteController {
                 );
             array_push($n, $sitios);
         }
-        echo json_encode($n);
+        echo json_encode(array("sitios"=>$n));
     }//getAllSites
 
     public function getSingleSite() {
