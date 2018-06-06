@@ -9,7 +9,6 @@ class SiteController {
 
     public function __construct() {
         $this->view = new View();
-        require 'model/SiteModel.php';
     }//constructors
 
     function euclidenDistance($variables, $arrayTemp){
@@ -34,23 +33,10 @@ class SiteController {
 
     public function get() {
 
+        require 'model/SiteModel.php';
         $model = new SiteModel();
-        $result = $model->get();
-        $n = [];
-
-        foreach ($result as $temp) {
-            $sitios = array(
-                'id'=>utf8_encode($temp['id']),
-                'name'=>utf8_encode($temp['name']),
-                'address'=>utf8_encode($temp['address']),
-                'description'=>utf8_encode($temp['description']),
-                'x'=>utf8_encode($temp['x']),
-                'y'=>utf8_encode($temp['y']),
-                'image'=>utf8_encode($temp['image'])
-                );
-            array_push($n, $sitios);
-        }
-        echo json_encode(array("k"=>$n));
+        $result = $model->get();      
+        echo json_encode($result);
     }//getAllSites
 
     public function getSingleSite() {

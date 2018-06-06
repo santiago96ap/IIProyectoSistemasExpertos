@@ -16,9 +16,9 @@
 
         function get() {
             $query = $this->db->prepare("call sp_get_all_destinations_p()");
-            $query->execute();
-            $result = $query->fetchAll();
-            return $result;
+        $query->execute();
+        $result = $query->fetchAll();
+        return $result
         }//getAllSites
 
         function getSingleSite($id) {
