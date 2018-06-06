@@ -9,7 +9,6 @@ class SiteController {
 
     public function __construct() {
         $this->view = new View();
-        require 'model/SiteModel.php';
     }//constructor
 
     function euclidenDistance($variables, $arrayTemp){
@@ -33,7 +32,7 @@ class SiteController {
     }//getAllSitesç
 
     public function get() {
-
+        require 'model/SiteModel.php';
         $model = new SiteModel();
         $result = $model->get();
     

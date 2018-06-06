@@ -15,9 +15,9 @@
   	  	}//getAllSites
 
         function get() {
-            $query = $this->db->prepare("call sp_get_all_destinations_p();");
+            $query = $this->db->prepare("call sp_get_all_destinations_p()");
             $query->execute();
-            $result = $query->fetch();
+            $result = $query->fetchAll();
             return $result;
         }//getAllSites
 
