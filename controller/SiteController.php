@@ -32,12 +32,13 @@ class SiteController {
         return $result;
     }//getAllSitesç
 
-    public function getAllSitesPrueba() {
+    public function get() {
 
         $model = new SiteModel();
-        $result = $model->getAllSitesPrueba();
+        $result = $model->get();
       
-        return $result;
+        //var_dump($result);
+        echo json_encode($result);
     }//getAllSites
 
     public function getSingleSite() {
