@@ -30,6 +30,14 @@ class SiteController {
         $result = $model->getAllSites();
       
         return $result;
+    }//getAllSitesç
+
+    public function getAllSitesPrueba() {
+
+        $model = new SiteModel();
+        $result = $model->getAllSitesPrueba();
+      
+        return $result;
     }//getAllSites
 
     public function getSingleSite() {
